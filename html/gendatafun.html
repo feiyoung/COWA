@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Generate the simulated data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for gendatafun {mulistgple}"><tr><td>gendatafun {mulistgple}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Generate the simulated data</h2>
+
+<h3>Description</h3>
+
+<p>Generate the simulated data based on multiple list experiments.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+
+  gendatafun(v,T,d,m,theta0)
+
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>v</code></td>
+<td>
+<p>an integer, population size of each primary period</p>
+</td></tr>
+<tr valign="top"><td><code>T</code></td>
+<td>
+<p>an integer, the number of primary period</p>
+</td></tr>
+<tr valign="top"><td><code>d</code></td>
+<td>
+<p>an integer, the number of agencies(lists)</p>
+</td></tr>
+<tr valign="top"><td><code>m</code></td>
+<td>
+<p>an integer, the dimension of covariates</p>
+</td></tr>
+<tr valign="top"><td><code>theta0</code></td>
+<td>
+<p>an vector, the initial value</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>nothing!
+</p>
+
+
+<h3>Value</h3>
+
+<p>return a list whose elements including: list with
+covariates of each primary period, list with
+multilist observe of each primary period, vector with observed numbers of each primary period, initial vector value
+</p>
+
+
+<h3>Note</h3>
+
+<p>nothing
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Liu Wei
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+  rm(list=ls(all=TRUE))
+  library(MASS)
+  v=1000
+  T=5
+  d=4
+  m&lt;-5
+  set.seed(1234)
+  theta0 &lt;-round(rnorm((T+m*d),0,0.8),1)
+  DATA &lt;-gendatafun(v,T,d,m)
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>mulistgple</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

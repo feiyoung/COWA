@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Evaluation of multiple list</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for mulistgple {mulistgple}"><tr><td>mulistgple {mulistgple}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Evaluation of multiple list</h2>
+
+<h3>Description</h3>
+
+<p>Evaluation of population size based on multiple list experiments.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+
+mulistgple(DATA)
+
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>DATA</code></td>
+<td>
+<p>a list whose elements including: list with
+covariates of each primary period, list with
+multilist observe of each primary period, vector with observed numbers of each primary period, initial vector value</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>nothing!
+</p>
+
+
+<h3>Value</h3>
+
+<p>return a list, whose elentments including: the estimates of parameters, the estimates of population size, the standard deviation of parameters, the standard deviation of population size.
+</p>
+
+
+<h3>Note</h3>
+
+<p>nothing
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Liu Wei
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+rm(list=ls(all=TRUE))
+library(MASS)
+v=1000
+T=5
+d=4
+m&lt;-5
+set.seed(1234)
+DATA &lt;-gendatafun(v,T,d,m)
+estparsd&lt;-mulistgple(DATA)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>mulistgple</em> version 0.1.0 <a href="00Index.html">Index</a>]</div>
+</body></html>
