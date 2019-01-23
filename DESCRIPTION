@@ -1,4 +1,4 @@
-Package: mulistgple
+Package: COWA
 Type: Package
 Title: Evaluation of multiple list (Title Case)
 Version: 0.1.0
@@ -10,4 +10,4 @@ Depends: MASS
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-Built: R 3.5.2; ; 2019-01-14 13:34:07 UTC; windows
+Built: R 3.5.2; ; 2019-01-23 09:23:52 UTC; windows
